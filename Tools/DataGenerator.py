@@ -47,9 +47,9 @@ def get_patch_train(l,uby,ubx,patchsize,channels,channel_stacks,percentiles,mode
     # Lower bound is 0.5 and upper bound is 3.
     brightnessRange = [0.5,3]
     #generating a list containing values between 0.5 and 3 with steps of 0.01 representing brightness degrees that will be sampled for introducing brightness. 
-    l = int(brightnessRange[0] * 100)
+    w = int(brightnessRange[0] * 100)
     u = int(brightnessRange[1]*100)
-    brightnesslist = [round(x*0.01,2) for x in range(l,u,1)]
+    brightnesslist = [round(x*0.01,2) for x in range(w,u,1)]
   
     #setting arguments to integers
     uby = int(uby)
